@@ -40,6 +40,7 @@ body {
     padding: 0;
     font-family: "Roboto";
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .container {
@@ -193,8 +194,45 @@ body {
 }
 
 .collection-item {
+    position: relative;
     display: flex;
     align-items: center;
+}
+
+.collection-item:first-child::before{
+    position: absolute;
+    top: -33%;
+    left: -41%;
+    width: 402px;
+    height: 300px;
+    background-image: url("../images/first_tree.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.collection-item:nth-child(2)::after{
+    position: absolute;
+    top: 41%;
+    right: -47%;
+    width: 392px;
+    height: 477px;
+    background-image: url("../images/second_tree.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.collection-item:last-child::before{
+    position: absolute;
+    top: -15%;
+    left: -47%;
+    width: 316px;
+    height: 269px;
+    background-image: url("../images/third_tree.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
 }
 
 .collection-item:nth-child(even) {
@@ -205,6 +243,8 @@ body {
     margin-right: 117px;
     margin-left: 0;
 }
+
+
 
 .item-right {
     width: 390px;
