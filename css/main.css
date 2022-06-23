@@ -1,0 +1,235 @@
+:root {
+    --main-text-color: #333333;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    background-image: url("../images/first_tree.png"), url("../images/second_tree.png"),url("../images/third_tree.png"),url("../images/second_back.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 825px) calc(50% - 160px), calc(50% + 950px) calc(50% + 490px), calc(50% - 950px) calc(50% + 1140px), calc(50%) calc(50% + 650px);
+    background-size: 402px 300px, 402px 300px,402px 300px, 1750px;
+}
+
+.container {
+    width: 1380px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    padding: 40px 0;
+    background-image: url("../images/head_back.png");
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 40px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.hero {
+    background-image: url("../images/head_back.png");
+}
+
+.hero-box {
+    padding-left: 150px;
+}
+
+.hero-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero-left {
+    width: 570px;
+    padding-left: 112px;
+}
+
+.hero-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.hero-text {
+    margin: 0;
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero-link {
+    display: inline-block;
+    padding: 16px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    background: #0A775F;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.hero {
+    margin-bottom: 20px;
+    padding-top: 180px;
+    padding-bottom: 183px;
+    position: relative;
+}
+
+.hero-right {
+    position: absolute;
+    right: -227px;
+    width: 710px;
+    height: 696px;
+    background-size: cover;
+    background-image: url("../images/coffee_back.png");
+}
+
+.coffee-main {
+    width: 710px;
+    height: 696px;
+}
+
+.hero-right::before {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+    background-size: contain;
+    content: "";
+    background-image: url("../images/alfred.png");
+}
+
+
+
+.collection-box {
+    margin: 0 30px;
+    padding-top: 20px;
+    /* background-image: url("../images/second_back.png"); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+
+.collection-heading {
+    margin-bottom: 80px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+}
+
+
+.collection-list {
+    width: 1114px;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+}
+
+.collection-item {
+    display: flex;
+    align-items: center;
+}
+
+.collection-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.collection-item:nth-child(even) .item-right {
+    margin-right: 117px;
+    margin-left: 0;
+}
+
+.item-right {
+    width: 390px;
+    margin-left: 117px;
+}
+
+.item-title {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--main-text-color);
+}
+
+.item-text {
+    margin: 0;
+    padding: 0;
+    color: var(--main-text-color);
+    font-size: 22px;
+    line-height: 34px;
+}
