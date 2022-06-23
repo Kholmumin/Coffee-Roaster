@@ -38,7 +38,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: "Roboto";
     font-weight: 400;
     background-image: url("../images/first_tree.png"), url("../images/second_tree.png"),url("../images/third_tree.png"),url("../images/second_back.png");
