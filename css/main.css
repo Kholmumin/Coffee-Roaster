@@ -8,8 +8,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
-        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+    url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -17,8 +17,8 @@
     font-style: normal;
     font-weight: 500;
     src: local(''),
-        url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
-        url('../fonts/roboto-v30-latin-500.woff') format('woff');
+    url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-500.woff') format('woff');
 }
 
 @font-face {
@@ -26,8 +26,8 @@
     font-style: normal;
     font-weight: 700;
     src: local(''),
-        url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
-        url('../fonts/roboto-v30-latin-700.woff') format('woff');
+    url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-700.woff') format('woff');
 }
 
 
@@ -155,7 +155,7 @@ body {
 
 .hero-right::before {
     position: absolute;
-
+    
     width: 160px;
     height: 160px;
     top: -10%;
@@ -174,7 +174,7 @@ body {
     background-image: url("../images/second_back.png");
     background-size: cover;
     background-repeat: no-repeat;
-
+    
 }
 
 .collection-heading {
@@ -190,7 +190,7 @@ body {
     width: 1114px;
     margin: 0 auto;
     padding: 0;
-
+    
     list-style: none;
 }
 
@@ -397,7 +397,7 @@ body {
     color: var(--main-text-color);
     opacity: 0.8;
     text-align: right;
-
+    
 }
 
 .work-item-desc {
@@ -474,4 +474,197 @@ body {
 
 .footer-item:last-child .footer-link{
     margin-right: 0;
+}
+
+.about-collection{
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+
+
+.about{
+    padding-bottom: 263px;
+}
+
+.about-right{
+    background-image: url("../images/about-hero.png");
+}
+
+.about-list{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.about-item{
+    display: flex;
+    position: relative;
+    
+}
+
+.about-item::before{
+    position: absolute;
+    top: -33%;
+    left: -41%;
+    width: 402px;
+    height: 300px;
+    background-image: url("../images/first_tree.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.item-img{
+    margin-right: 105px;
+}
+
+
+.about-item-box{
+    width: 626px;
+}
+
+.item-title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.about-text{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--main-text-color);
+}
+
+
+.quality-section{
+    margin-top: 160px;
+    
+}
+
+.quality-box{
+    width: 639px;
+    position: relative;
+}
+
+.quality-box::after{
+    position: absolute;
+    top: -55%;
+    right: -100%;
+    content: "";
+    width: 550px;
+    height: 500px;
+    background-image: url("../images/black-girl.png");
+    background-size: contain;
+    
+}
+
+.qualtiy-heading{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;   
+    color: #FFFFFF
+}
+
+.quality-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;   
+    color: #FFFFFF;
+}
+
+.quality-section .choose-box{
+    padding-bottom: 118px;
+}
+
+.country-section{
+    margin-top: 0;
+}
+
+.country-heading{
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.country-list{
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.country-item{
+    width: 433px;
+    position: relative;
+    margin-right: 10px;
+    padding-top: 140px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    background-color: #F8F8F2;
+}
+
+
+.country-item::after{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 103px;
+    height: 143px;
+    background-image: url("../images/uk.svg");
+    content: "";  
+}
+
+.country-item:nth-child(2)::after{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 103px;
+    height: 143px;
+    background-image: url("../images/canada.png");
+    content: "";  
+}
+
+.country-item:last-child:after{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 103px;
+    height: 143px;
+    background-image: url("../images/australia.svg");
+    background-repeat: no-repeat;
+    content: "";  
+}
+
+
+
+.country-item-box{
+    width: 141px;
+}
+
+.coutry-title{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--main-text-color);
+}
+
+.coutry-text,
+.country-tel{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-text-color);
+}
+
+.country-tel{
+    text-decoration: none;
 }
