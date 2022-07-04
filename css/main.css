@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 14 version
+*/
+
 :root {
     --main-text-color: #333333;
     --bg-color: #fff;
@@ -34,7 +41,8 @@
 
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -58,11 +66,17 @@ body {
 }
 
 .header-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -198,8 +212,12 @@ body {
 
 .collection-item {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .collection-item:first-child::before {
@@ -239,7 +257,10 @@ body {
 }
 
 .collection-item:nth-child(even) {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .collection-item:nth-child(even) .item-right {
@@ -307,6 +328,8 @@ body {
 .choose-list {
     position: absolute;
     top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding-left: 0;
@@ -373,6 +396,8 @@ body {
 }
 
 .work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     margin-top: 20px;
@@ -443,12 +468,20 @@ body {
 }
 
 .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer-links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding-right: 0;
@@ -501,6 +534,8 @@ body {
 
 
 .about-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 
@@ -596,6 +631,8 @@ body {
 }
 
 .country-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding-left: 0;
@@ -698,6 +735,8 @@ body {
 }
 
 .question-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 50px;
 }
@@ -777,8 +816,12 @@ input {
 }
 
 .details-summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 35px;
@@ -804,6 +847,8 @@ span {
 }
 
 .label-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 60px;
 }
@@ -890,8 +935,12 @@ span {
 }
 
 .button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-top: 20px;
 }
 
